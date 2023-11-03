@@ -16,7 +16,7 @@ const Login = () => {
 
   const nav = useNavigate();
 
-  const token = Cookies.get("token");
+  const token = Cookies.get("tokenApi");
   useEffect(() => {
     if (token) {
       nav("/");
@@ -49,12 +49,11 @@ const Login = () => {
       }
       const isUser = iu?.data?.find((data) => data?.email === email);
       const User = iu?.data?.filter((data) => data?.email === email);
-      console.log(user);
 
       if (User) {
         Cookies.set("userData", JSON.stringify(User));
 
-        Cookies.set("token", User?.password);
+        Cookies.set("token", token);
 
         window.location.replace("/");
       } else {
