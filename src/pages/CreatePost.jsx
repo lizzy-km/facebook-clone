@@ -48,7 +48,7 @@ const CreatePost = ({ setCp }) => {
     const token = Cookies?.get("tokenApi");
 
     axios.defaults.proxy =
-      "https://195.3.223.164/?__cpo=aHR0cHM6Ly9hcGkuZXNjdWVsYWpzLmNv/api.escuelajs.co/api/v1/files/upload";
+      "https://51.159.111.35/?__cpo=aHR0cHM6Ly9hcGkuZXNjdWVsYWpzLmNv/api.escuelajs.co/api/v1/files/upload";
 
     const response = await axios.post(
       "https://api.escuelajs.co/api/v1/files/upload",

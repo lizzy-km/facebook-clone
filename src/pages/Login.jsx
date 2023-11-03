@@ -49,13 +49,14 @@ const Login = () => {
       }
       const isUser = iu?.data?.find((data) => data?.email === email);
       const User = iu?.data?.filter((data) => data?.email === email);
+      console.log(user);
 
-      if (isUser) {
+      if (User) {
         Cookies.set("userData", JSON.stringify(User));
 
         Cookies.set("token", User?.password);
 
-        window.location.replace("/");
+        // window.location.replace("/");
       } else {
         toast({
           position: "top-right",

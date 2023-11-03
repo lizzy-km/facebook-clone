@@ -37,6 +37,9 @@ const NavBarM = () => {
   };
 
   const { user } = AuthFun();
+ 
+
+
 
   const { currentData } = usePhotoQuery();
 
@@ -60,7 +63,6 @@ const NavBarM = () => {
 
   const userList = useGetSingleUserQuery()
   const searchUser = userList?.data?.filter((user)=>user.name.toLowerCase().includes(id.toLowerCase()))
-
   const search = (e) => {
     setId(e.target.value);
   };

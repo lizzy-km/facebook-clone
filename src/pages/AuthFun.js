@@ -108,11 +108,11 @@ const AuthFun = () => {
   const [addCategory] = useCreateCategoriesMutation();
   const catList = useGetCategoriesQuery();
 
-  let LID;
+  const LID = Cookies?.get("userData");
+
   if (!LID) {
     Cookies.set("userData", JSON.stringify("userData"));
   }
-   LID = Cookies?.get("userData");
 
   
 
@@ -128,7 +128,6 @@ const AuthFun = () => {
   );
 
   const user = userData?.find((data) => data);
-
   // const user = userData?.find(data => data)
 
   let publicProfile;
