@@ -42,9 +42,9 @@ const Facebook = ({ isLogout }) => {
   // Navigate to the login page if the token is not available
   const nav = useNavigate();
   useEffect(() => {
-    // if (!token) {
-    //   window.location.replace("/login");
-    // }
+    if (!token) {
+      window.location.replace("/login");
+    }
   }, []);
 
   // Check the media query for different screen sizes
