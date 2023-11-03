@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Metrophobic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+.bg-blur {
+  background-color: #7a78785b;
+  backdrop-filter: blur(3px);
+}
+.bg-blur-p {
+  background-color: #27262690;
+  backdrop-filter: blur(3px);
+}
+.bg-img {
+  background-image: url("https://i.pinimg.com/originals/67/fa/e0/67fae0fe4255777324693d95d3484e8c.jpg");
+  filter: brightness(0.8);
+}
+.saved {
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png);
+  background-position: 0 -190px;
+  background-size: 34px 570px;
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.savedItems {
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/I9F5fFDtRUG.png);
+  background-position: 0px -158px;
+  background-size: 26px 418px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  -webkit-filter: invert(100%);
+}
+
+.CreateSm {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  width: 50% !important;
+  height: 50% !important;
+  transition: 0.8s;
+  -webkit-animation: createSm 0.6s steps(100, start) alternate both;
+  animation: createSm 0.6s steps(100, start) alternate both;
+}
+
+@-webkit-keyframes createSm {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes createSm {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.moveS:focus-within .storyC {
+  margin-left: -500px;
+}

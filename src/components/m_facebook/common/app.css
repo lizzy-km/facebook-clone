@@ -1,0 +1,120 @@
+.d-none {
+  display: none;
+}
+
+.bg-nav-blur {
+  background-color: #262c38b0;
+  backdrop-filter: blur(5px);
+}
+
+.xe3v8dz {
+  fill: white;
+}
+* {
+  transition: 0.5s;
+  letter-spacing: 1px;
+}
+
+.react-type {
+  opacity: 0;
+  transition: 0.5s all;
+  top: -120%;
+  left: -610%;
+}
+.p_r_r:hover .react-type {
+  opacity: 1;
+  top: -130%;
+  left: -30%;
+}
+
+.react-type svg:hover {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin-top: -10px;
+}
+.react-type img:hover {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin-top: -10px;
+}
+
+.ast0 {
+  fill: url(#SVGID_1_);
+}
+.ast1 {
+  fill: #262c38;
+}
+.ast2 {
+  fill: none;
+  stroke: #262c38;
+  stroke-width: 60;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.wst0 {
+  fill: #ffda6b;
+}
+.wst1 {
+  fill: #262c38;
+}
+.wst2 {
+  fill: none;
+  stroke: #262c38;
+  stroke-width: 60;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.lst0 {
+  fill: #fff;
+}
+
+.hst0 {
+  fill: #fff;
+}
+.hst1 {
+  fill: #ffda6b;
+}
+.st2 {
+  fill: none;
+  stroke: #262c38;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.hst3 {
+  fill: #262c38;
+}
+.hst4 {
+  fill: #f05266;
+}
+.hst5 {
+  fill: none;
+  stroke: #262c38;
+  stroke-width: 60;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.sst0 {
+  fill: #ffda6b;
+}
+.sst1 {
+  fill: #262c38;
+}
+.sst2 {
+  fill: none;
+  stroke: #262c38;
+  stroke-width: 60;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.sst3 {
+  fill: #6485c3;
+}
