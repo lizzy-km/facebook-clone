@@ -14,11 +14,9 @@ import { useMediaQuery } from "react-responsive";
 import CreatePost from "./pages/CreatePost";
 import AdminProfile from "./components/facebook/others/AdminProfile";
 import Saved from "./pages/Saved";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import Cookies from "js-cookie";
-import { CatData } from "./redux/services/PostCategorySlice";
 import { SavePost } from "./redux/services/UserPhotoSlice";
-import { useUserLoginMutation } from "./redux/api/PostApi";
 
 function App() {
 

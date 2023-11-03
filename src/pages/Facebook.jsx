@@ -18,22 +18,17 @@ import AuthFun from "./AuthFun";
 import { addViewImage } from "../redux/services/authSlice";
 import { ArrowLeftIcon } from "@chakra-ui/icons";
 import { ArrowRightIcon } from "@chakra-ui/icons";
-import UserList from "./userList";
 
 const Facebook = ({ isLogout }) => {
   // Get the token from the cookies
-  const token = Cookies.get("token");
+  const token = Cookies.get("tokenApi");
 
   // Get the user data from the API
   //Get USer
 
   const { user } = AuthFun();
 
-  const LID = Cookies.get("userData");
-
-  if (!LID) {
-    Cookies.set("userData", JSON.stringify("userData"));
-  }
+  
 
   const setUId = () => {
     Cookies.set("UserId", user?.id);
