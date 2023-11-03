@@ -56,7 +56,7 @@ const Login = () => {
 
         Cookies.set("token", User?.password);
 
-        // window.location.replace("/");
+        window.location.replace("/");
       } else {
         toast({
           position: "top-right",
