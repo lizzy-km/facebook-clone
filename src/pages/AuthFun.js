@@ -188,7 +188,6 @@ const AuthFun = () => {
       };
       //  if (user) {
       const res = await signup(body);
-      console.log(res);
       setSignUpRes(res);
       if (res?.error?.data?.message) {
         setError(res?.error?.data?.message);
@@ -213,7 +212,7 @@ const AuthFun = () => {
             duration: 5000,
             isClosable: true,
           });
-          navigate("/login");
+          window.location.replace("/login");
         }
       }
       //  }
