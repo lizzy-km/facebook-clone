@@ -10,10 +10,13 @@ import {
 } from "../redux/api/PostApi";
 import AuthFun from "./AuthFun";
 import axios from "axios";
+import { addDoc, collection } from '@firebase/firestore'
+import { firebase } from "../firebase";
 
 const CreateStory = ({ setCt }) => {
   const { user } = AuthFun();
 
+  const ref = collection(firebase,'story')
 
   const [detail, setPdetail] = useState("story");
   const [images, setImage] = useState();
@@ -75,7 +78,8 @@ const CreateStory = ({ setCt }) => {
       images:[images],
     };
     const pp = await post(data);
-    console.log(pp);
+   const fire = await addDoc(ref,data)
+    console.log(fire);
     //(pp);
     setTimeout(() => {
       if (pp?.data) {
