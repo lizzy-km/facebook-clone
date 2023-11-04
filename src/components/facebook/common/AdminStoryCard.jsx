@@ -46,7 +46,7 @@ const AdminStoryCard = ({ story, setViewStory }) => {
             )}
 
             {!isLoading &&
-              story?.map((data) => {
+              story?.reverse().map((data) => {
                 return (
                   <img
                     key={data?.id}

@@ -16,7 +16,7 @@ const CreateStory = ({ setCt }) => {
 
 
   const [detail, setPdetail] = useState("story");
-  const [image, setImage] = useState();
+  const [images, setImage] = useState();
   const id = useGetCategoriesQuery();
 
   const [imageFile, setImageFile] = useState(null);
@@ -27,13 +27,7 @@ const CreateStory = ({ setCt }) => {
 
   const categoryId = catId?.find((data) => data);
 
-  const data = {
-    title: user?.name,
-    price: user?.id,
-    description: detail,
-    categoryId: categoryId?.id,
-    images: [imgUrl],
-  };
+  
 
   const handleChange = (event) => {
     setImageFile(event.target.files[0]);
@@ -61,6 +55,7 @@ const CreateStory = ({ setCt }) => {
     );
 
     setImgUrl(response.data.location);
+    setImage(response.data.location)
 
   };
 
@@ -71,11 +66,19 @@ const CreateStory = ({ setCt }) => {
   const [post, { isLoading }] = useCreateProductsMutation();
 
   const postU = async () => {
+
+    const data = {
+      title: user?.name,
+      price: user?.id,
+      description: detail,
+      categoryId: categoryId?.id,
+      images:[images],
+    };
     const pp = await post(data);
+    console.log(pp);
     //(pp);
     setTimeout(() => {
       if (pp?.data) {
-        setImage("");
         setCt(
           "d-n createP absolute  w-[100%] h-[100%] justify-center items-center "
         );

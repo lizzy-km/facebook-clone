@@ -80,7 +80,7 @@ const Story = ({ setCt, setViewStory }) => {
           story={adminStory}
         />
       )}
-      {publicStoryD?.map((data) => {
+      {publicStoryD?.reverse().map((data) => {
         return (
           <StoryCard
             setViewStory={setViewStory}
