@@ -9,8 +9,7 @@ import { app, perf } from "./firebase.js";
 
 inject();
 
-app()
-perf()
+
 // const element = mount(App, document.getElementById('root'));
 
 ReactDOM.createRoot(document.getElementById("root")).render(
