@@ -13,7 +13,9 @@ import { addStoryImage, addViewImage } from "../../../redux/services/authSlice";
 import { Image } from "@chakra-ui/react";
 
 const AdminProfile = ({ isLogout }) => {
-  const token = Cookies.get("token");
+  const token = Cookies.get('token')
+    !token && window.location.replace('/login')
+  
   const nav = useNavigate();
   const dispatch = useDispatch();
 
@@ -53,9 +55,9 @@ const AdminProfile = ({ isLogout }) => {
   }
 
   useEffect(() => {
-    if (!token) {
-      nav("/login");
-    }
+    const token = Cookies.get('token')
+    !token && window.location.replace('/login')
+  
   }, [token]);
 
   const viewImage = useSelector((state) => state.authSlice.viewImage);

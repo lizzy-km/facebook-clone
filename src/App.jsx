@@ -14,7 +14,7 @@ import { useMediaQuery } from "react-responsive";
 import CreatePost from "./pages/CreatePost";
 import AdminProfile from "./components/facebook/others/AdminProfile";
 import Saved from "./pages/Saved";
-import {  useState } from "react";
+import {  useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import { SavePost } from "./redux/services/UserPhotoSlice";
 
@@ -30,7 +30,13 @@ function App() {
 
   const [isLogout, setIsLogout] = useState(false);
 
+  
+
   isLogout === true && Cookies.remove("*");
+
+  
+  
+
 
   return (
     <BrowserRouter>
