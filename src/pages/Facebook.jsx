@@ -121,7 +121,7 @@ const Facebook = ({ isLogout }) => {
             <div className="  bg-[#121212cc] animate-pulse animate-pulse rounded-[8px] w-[90%] h-[300x] ">
               {/* <Story/> */}
             </div>
-            <div className="   bg-[#121212cc] animate-pulse animate-pulse rounded-[8px] w-[400px] h-[300px] max-[450px]:block ">
+            <div className="   bg-[#121212cc] animate-pulse rounded-[8px] w-[400px] h-[300px] max-[450px]:block ">
               {/* <CreatePost createP={createP} setCp={setCp} /> */}
             </div>
 
