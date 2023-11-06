@@ -94,38 +94,38 @@ const Facebook = ({ isLogout }) => {
     return (
       <div className=" relative flex overflow-hidden pt-[3.6rem] max-[450px]:pt-0  justify-between  bg-[#18191A]  w-[100%] max-h-screen  ">
         {isTablet && (
-          <div className=" flex flex-col gap-4 bg-[#121212cc]  max-h-[900px] min-h-[800px] d-n min-[450px]:block w-[25%] text-[#fff] "></div>
+          <div className=" flex animate-pulse flex-col gap-4 bg-[#121212cc] animate-pulse  max-h-[900px] min-h-[800px] d-n min-[450px]:block w-[25%] text-[#fff] "></div>
         )}
         {isDesktop && (
-          <div className=" flex flex-col gap-4 bg-[#121212cc]  max-h-[900px] min-h-[800px] d-n min-[450px]:block w-[25%] text-[#fff] "></div>
+          <div className=" flex flex-col animate-pulse gap-4 bg-[#121212cc] animate-pulse  max-h-[900px] min-h-[800px] d-n min-[450px]:block w-[25%] text-[#fff] "></div>
         )}
 
         {isMobile && (
           <div className="  flex flex-col gap-4  max-h-screen  justify-center items-center   w-[100%]   overflow-y-auto overflow-x-hidden  ">
-            <div className="block w-[90%] h-[110px] bg-[#121212cc] rounded-[8px] ">
+            <div className="block animate-pulse w-[90%] h-[110px] bg-[#121212cc] animate-pulse rounded-[8px] ">
               {/* <CreatePost createP={createP} setCp={setCp}   /> */}
             </div>
-            <div className="  bg-[#121212cc] rounded-[8px] w-[90%] h-[100px] ">
+            <div className=" animate-pulse bg-[#121212cc] animate-pulse rounded-[8px] w-[90%] h-[100px] ">
               {/* <Story/> */}
             </div>
 
-            <div className=" w-[90%] h-[400px] flex-col  bg-[#121212cc] rounded-[8px] justify-center  flex items-center ">
+            <div className=" w-[90%] animate-pulse h-[400px] flex-col  bg-[#121212cc] animate-pulse rounded-[8px] justify-center  flex items-center ">
               {/* <h1 className=' text-[#ffffff] text-2xl ' > API rate Limit exceed! </h1> */}
-              <p id="demo" className=" text-[#ffffff] text-xl "></p>
+              <p id="demo" className=" animate-pulse text-[#ffffff] text-xl "></p>
             </div>
           </div>
         )}
 
         {isTablet && (
           <div className=" flex flex-col gap-4  max-h-screen  justify-center items-center    w-[50%]   overflow-y-auto overflow-x-hidden   ">
-            <div className="  bg-[#121212cc] rounded-[8px] w-[90%] h-[300x] ">
+            <div className="  bg-[#121212cc] animate-pulse animate-pulse rounded-[8px] w-[90%] h-[300x] ">
               {/* <Story/> */}
             </div>
-            <div className="   bg-[#121212cc] rounded-[8px] w-[400px] h-[300px] max-[450px]:block ">
+            <div className="   bg-[#121212cc] animate-pulse animate-pulse rounded-[8px] w-[400px] h-[300px] max-[450px]:block ">
               {/* <CreatePost createP={createP} setCp={setCp} /> */}
             </div>
 
-            <div className=" w-[400px] h-[500px] flex-col  bg-[#121212cc] rounded-[8px] justify-center  flex items-center ">
+            <div className=" w-[400px] h-[500px] flex-col  bg-[#121212cc] animate-pulse rounded-[8px] justify-center  flex items-center ">
               {/* <h1 className=' text-[#ffffff] text-4xl ' > API rate Limit exceed! </h1> */}
               <p id="demo" className=" text-[#ffffff] text-xl "></p>
             </div>
@@ -133,14 +133,14 @@ const Facebook = ({ isLogout }) => {
         )}
         {isDesktop && (
           <div className=" flex flex-col gap-4  max-h-screen w-[50%] justify-center items-center  overflow-y-auto overflow-x-hidden  ">
-            <div className="flex w-[90%] h-[300px]  bg-[#121212cc] rounded-[8px] ">
+            <div className="flex w-[90%] h-[300px]  bg-[#121212cc] animate-pulse rounded-[8px] ">
               {/* <Story/> */}
             </div>
-            <div className=" w-[500px] h-[300px]  bg-[#121212cc] rounded-[8px]  max-[450px]:block ">
+            <div className=" w-[500px] h-[300px]  bg-[#121212cc] animate-pulse rounded-[8px]  max-[450px]:block ">
               {/* <CreatePost createP={createP} setCp={setCp}  /> */}
             </div>
 
-            <div className=" w-[500px] h-[600px] gap-6 bg-[#121212cc] rounded-[8px] self-center justify-center  flex flex-col items-center ">
+            <div className=" w-[500px] h-[600px] gap-6 bg-[#121212cc] animate-pulse rounded-[8px] self-center justify-center  flex flex-col items-center ">
               {/* <h1 className=' text-[#ffffff] text-4xl ' > API rate Limit exceed! </h1> */}
               <p id="demo" className=" text-[#ffffff] text-xl "></p>
             </div>
@@ -148,10 +148,10 @@ const Facebook = ({ isLogout }) => {
         )}
 
         {isTablet && (
-          <div className=" flex flex-col gap-4  bg-[#121212cc] rounded-[8px]  max-h-[900px] min-h-[800px] d-n min-[450px]:block w-[25%] text-[#fff] "></div>
+          <div className=" flex flex-col gap-4  bg-[#121212cc] animate-pulse rounded-[8px]  max-h-[900px] min-h-[800px] d-n min-[450px]:block w-[25%] text-[#fff] "></div>
         )}
         {isDesktop && (
-          <div className=" flex flex-col gap-4  bg-[#121212cc] rounded-[8px]  max-h-[900px] min-h-[800px] d-n min-[450px]:block w-[25%] text-[#fff] "></div>
+          <div className=" flex flex-col gap-4  bg-[#121212cc] animate-pulse rounded-[8px]  max-h-[900px] min-h-[800px] d-n min-[450px]:block w-[25%] text-[#fff] "></div>
         )}
 
         <div className={cp}>{/* <CreateP setCp={setCp} /> */}</div>
