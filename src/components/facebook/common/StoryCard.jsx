@@ -5,7 +5,6 @@ import {
   useGetSingleUserQuery,
 } from "../../../redux/api/PostApi";
 import { useDispatch } from "react-redux";
-import { useState } from "react";
 
 const StoryCard = ({ data, img, setViewStory }) => {
   const userAll = useGetSingleUserQuery();
@@ -62,7 +61,7 @@ const StoryCard = ({ data, img, setViewStory }) => {
                   <img
                     key={data?.id}
                     className=" snap-center rounded-lg min-w-[107.198px] h-[190.573px] object-cover "
-                    src={data?.images}
+                    src={data?.images[0].slice(2,data?.images[0].length - 2)}
                     alt=""
                   />
                 );

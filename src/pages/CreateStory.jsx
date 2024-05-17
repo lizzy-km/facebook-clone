@@ -60,6 +60,7 @@ const CreateStory = ({ setCt }) => {
     setImgUrl(response.data.location);
     setImage(response.data.location)
 
+
   };
 
   useEffect(() => {
@@ -77,9 +78,10 @@ const CreateStory = ({ setCt }) => {
       categoryId: categoryId?.id,
       images:[images],
     };
+
+
     const pp = await post(data);
    const fire = await addDoc(ref,data)
-    console.log(fire);
     //(pp);
     setTimeout(() => {
       if (pp?.data) {

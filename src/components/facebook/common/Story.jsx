@@ -21,11 +21,15 @@ const Story = ({ setCt, setViewStory }) => {
   const [loading, setLoading] = useState(false);
 
   // const data  = useGetPostQuery();
-  const token = "4014|u4yp9RlCwObTqWeu9SoKIEnhAUXd90FsosqjEEYT";
+
+
 
   const story = data?.data?.filter((data) => data?.category?.name === "story");
   const adminStory = story?.filter((data) => data?.title === user?.name);
   const publicStory = story?.filter((data) => data?.title !== user?.name);
+
+
+  console.log(adminStory);
 
   const publicStoryD = publicStory.reduce((accumulator, item) => {
     const existingItem = accumulator.find(

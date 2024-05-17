@@ -130,7 +130,7 @@ const AdminPostCard = ({ data }) => {
   //(data);
 
   const setView = () => {
-    dispatch(addViewImage(data?.images));
+    dispatch(addViewImage(data?.images[0].slice(2,data?.images[0].length - 2)));
   };
 
   function checkImageUrl(url, callback) {
@@ -150,7 +150,7 @@ const AdminPostCard = ({ data }) => {
   }
 
   // Usage
-  const imageUrl = data?.images;
+  const imageUrl = data?.images[0].slice(2,data?.images[0].length - 2);
   const [isImg, setIsImg] = useState(false);
   checkImageUrl(imageUrl, function (exists) {
     if (exists) {
@@ -337,13 +337,13 @@ const AdminPostCard = ({ data }) => {
                     </div>
                   )}
                 </div>
-                {isValidUrl(data?.images) &&
+                {isValidUrl(data?.images[0].slice(2,data?.images[0].length - 2)) &&
                   isImg &&
                   data?.images != "https://example.com/example.jpg" && (
                     <img
                       onClick={setView}
                       className="p_d_p pp cursor-pointer w-full min-h-[400px] h-auto object-cover"
-                      src={data?.images}
+                      src={data?.images[0].slice(2,data?.images[0].length - 2)}
                       alt="post image"
                     />
                   )}

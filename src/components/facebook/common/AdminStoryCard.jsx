@@ -10,7 +10,9 @@ const AdminStoryCard = ({ story, setViewStory }) => {
   const { isLoading } = useGetProductsQuery();
   const { user } = AuthFun();
 
-  const isStory = story?.find((data) => isValidUrl(data?.images));
+  // const isStory = story?.find((data) => isValidUrl(data?.images));
+  const isStory = true
+
 
   if (isStory) {
     return (
@@ -51,7 +53,7 @@ const AdminStoryCard = ({ story, setViewStory }) => {
                   <img
                     key={data?.id}
                     className=" snap-center rounded-lg min-w-[107.198px] h-[190.573px] object-cover "
-                    src={data?.images}
+                    src={data?.images[0].slice(2,data?.images[0].length - 2)}
                     alt=""
                   />
                 );

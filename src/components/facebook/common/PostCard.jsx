@@ -125,7 +125,6 @@ const PostCard = ({ data, isLoading }) => {
   const isExistedSp = sharePost?.find((item) => item.id === data?.id);
 
 
-  console.log('post');
   if (isLoading) {
     return (
       <div className=" w-[500px] h-auto ">
