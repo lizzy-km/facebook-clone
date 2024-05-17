@@ -335,7 +335,6 @@ const Register = () => {
             <FormControl id="password" isRequired>
               <FormLabel>
                 Profile image{" "}
-                <Text color={"red.500"}>(Paste your image Url)</Text>{" "}
               </FormLabel>
               <InputGroup>
                 <Input
